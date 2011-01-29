@@ -1,0 +1,20 @@
+/**
+ * SkiFree HTMl5 Clone CSS
+ *
+ * @author Andrew Mason (andrew@coderonfire.com)
+ * @filedescription CSS theme
+ */
+ 
+ body {
+	font-family: monospace;
+ }
+ 
+ #wrapper {
+	width: 480;
+	margin: 0 auto;
+	text-align: center;
+ }
+ 
+ canvas {
+	border: 1px solid #000;
+ }
