@@ -2,9 +2,39 @@
 <html>
     <head>
         <title>SkiFree</title>
+		<link type="text/css" rel="stylesheet" href="css/skifree.css" />
     </head>
     <body>
-        <canvas width="360" height="480">
+		<div id="wrapper">
+			<h1>SkiFree HTML5 Clone</h1>
+			
+			<canvas width="360" height="480"></canvas>
+			
+			<p>This is a simple remake of the classic Micorsoft game SkiFree using JavaScript and the &lt;canvas&gt; tag.
+			
+			<p>Coded by <a href="http://coderonfire.com/">Andrew Mason</a>. Source code is 
+			<a href="http://www.gnu.org/licenses/gpl.html">GPL</a> and available at
+			<a href="https://github.com/andymason/Skifree-HTML5-clone">Github</a>.
+			
+		</div>
+		
+		<!-- Load in the JavaScript -->
         <script type="text/javascript" src="skifree.js"></script>
+        
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-11438002-1']);
+          _gaq.push(['_setDomainName', '.coderonfire.com']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
     </body>
 </html>
