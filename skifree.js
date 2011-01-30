@@ -203,10 +203,10 @@ var SKI = (function() {
 			}
             
 			// Get the location of the mouse
-			// Firefox only does .layerX/Y
+			// Firefox doesn't have event offsetX/Y so we need to calc it.
 			if (typeof event.offsetX === 'undefined') {
-				mouseX = event.layerX;
-				mouseY = event.layerY;
+				mouseX = event.pageX - event.target.offsetLeft;
+				mouseY = event.pageY - event.target.offsetTop;
 			} else {
 				mouseX = event.offsetX;
 				mouseY = event.offsetY;
@@ -217,6 +217,7 @@ var SKI = (function() {
             distX = pos.x - mouseX;
             distY = pos.y - mouseY;
 			
+			console.log(mouseX);
             // Stop moving is mouse is above user
             if (distY >= 0) {
                 //direction = 0;
@@ -242,6 +243,7 @@ var SKI = (function() {
             
             // Set angle direction
             angle *= (distX > 0) ? -1 : 1;
+            
         };
         
         /**
