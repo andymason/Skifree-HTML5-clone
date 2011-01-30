@@ -217,7 +217,6 @@ var SKI = (function() {
             distX = pos.x - mouseX;
             distY = pos.y - mouseY;
 			
-			console.log(mouseX);
             // Stop moving is mouse is above user
             if (distY >= 0) {
                 //direction = 0;
